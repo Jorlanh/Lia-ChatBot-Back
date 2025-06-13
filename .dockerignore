@@ -1,0 +1,6 @@
+# Arquivos e pastas a serem ignorados pelo Docker
+.git
+.gitignore
+.idea/
+.vscode/
+target/
