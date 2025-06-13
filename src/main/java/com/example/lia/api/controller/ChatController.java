@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000") // Permite acesso de qualquer origem (bom para desenvolvimento)
+@CrossOrigin(origins = "https://lia-chatbot-front.onrender.com,http://localhost:3000") // Permite acesso de qualquer origem (bom para desenvolvimento)
 public class ChatController {
 
     @Autowired
