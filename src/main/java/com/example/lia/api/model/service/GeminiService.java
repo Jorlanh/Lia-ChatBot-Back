@@ -16,7 +16,7 @@ import java.util.Collections;
 @Service
 public class GeminiService {
     
-    private final String apiKey = "";
+    private final String apiKey = "AIzaSyC42ddzGV4EW2tBHa8ANf49DfBpU95HqMo";
     
     private final String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + apiKey;
 
