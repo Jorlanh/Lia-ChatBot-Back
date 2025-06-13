@@ -5,9 +5,13 @@ FROM eclipse-temurin:17-jdk-jammy as builder
 # Define o diretório de trabalho dentro do contêiner
 WORKDIR /app
 
-# Copia o wrapper do Maven para aproveitar o cache de dependências
+# Copia o wrapper do Maven
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
+
+# --- LINHA ADICIONADA ---
+# Dá permissão de execução ao script do Maven Wrapper
+RUN chmod +x ./mvnw
 
 # Baixa as dependências do projeto. O Docker guardará essa camada em cache.
 RUN ./mvnw dependency:go-offline
